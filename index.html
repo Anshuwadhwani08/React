@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Namaste React</title>
+</head>
+<body>
+    <div>
+        <h1>Top of root</h1>
+    </div>
+    <!-- As root render, react applies to only this div therefore react is library 
+        which can be used to any part of code. not like a framework -->
+    <div id="root">
+        <h1> element inside root</h1>
+         <!--   this will be replaced by root render -->
+    </div>
+    <div>
+        <h1>below of root</h1>
+    </div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./App.js"></script>
+    <!-- if this app.js written before react cdn it will give error --> 
+</body>
+</html>
